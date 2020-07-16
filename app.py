@@ -11,7 +11,8 @@ def leer_nueva_respuesta():
 @app.route("/")
 def home():
     generated_text = leer_nueva_respuesta()
-    return render_template('index.html',generated_text=generated_text)
+    generated_text_splitted_by_line = generated_text.split("\n")
+    return render_template('index.html',generated_text=generated_text_splitted_by_line)
 
 if __name__ == "__main__":
     app.run(debug=True)

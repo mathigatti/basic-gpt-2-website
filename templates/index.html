@@ -15,7 +15,9 @@
 
 <body>
 	<h1>Mi PC dijo una vez</h1>
-	<p>{{generated_text}}</p>
+	{% for line in generated_text %}
+	    <p>{{line}}</p>
+	{% endfor %}
 </body>
 
 </body>

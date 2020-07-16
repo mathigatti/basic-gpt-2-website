@@ -1,6 +1,8 @@
 # Basic GPT-2 website
 Sitio web hecho en flask para generar periodicamente textos nuevos con el modelo de red neuronal GPT-2
 
+![](data/sample.jpg)
+
 El proyecto esta formado por dos scripts principales, `app.py` que ejecuta el sitio web y `gpt-2.py` que genera un texto nuevo periodicamente y lo guarda en `data/texto_generado.txt`
 
 ## Requerimientos
